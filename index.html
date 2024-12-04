@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Specialists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Psychology Specialists</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#psychologists">Our Psychologists</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Psychology Specialists</h1>
+            <p>Your mental health is our priority. Connect with expert psychologists today.</p>
+            <button id="consultBtn">Consult a Psychologist</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Psychology Specialists is a platform that unites qualified psychologists to provide expert mental health services to those in need.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Individual Therapy</li>
+                <li>Couple Counseling</li>
+                <li>Family Therapy</li>
+                <li>Child Psychology</li>
+                <li>Cognitive Behavioral Therapy</li>
+            </ul>
+        </section>
+
+        <section id="psychologists">
+            <h2>Our Psychologists</h2>
+            <div class="psychologist-list">
+                <!-- Psychologist cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Psychology Specialists. All rights reserved.</p>
+    </footer>
+
+    <div id="consultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Consult a Psychologist</h2>
+            <form id="consultForm">
+                <input type="text" id="consultName" placeholder="Your Name" required>
+                <input type="email" id="consultEmail" placeholder="Your Email" required>
+                <textarea id="consultMessage" placeholder="Briefly describe your concern" required></textarea>
+                <button type="submit">Request Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
